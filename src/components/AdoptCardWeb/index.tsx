@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 const AdoptCardWeb = () => {
   return (
     <section className="lg:hidden flex mx-24 mt-8 z-10 relative rounded-lg bg-[#003459]">
