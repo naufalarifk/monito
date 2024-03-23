@@ -51,7 +51,7 @@ export default function Home() {
       </section>
       {/* Divider */}
         <AdoptCardWeb/>
-        <AdoptCardMobile/>
+        {/* <AdoptCardMobile/> */}
       {/* Item List */}
       <section className="lg:block hidden lg:px-24 pt-8">
         <div className="flex justify-between items-end">
