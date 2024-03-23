@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero/Jumbotron */}
       <HeaderWeb/>
       <HeaderMobile/>
-      <header className="pt-4 lg:pt-24 space-y-56 bg-[#FBEED5] px-4 lg:px-24 flex lg:flex-row flex-col">
+      <header className="pt-4 lg:pt-24 space-y-64 bg-[#FBEED5] px-4 lg:px-24 flex lg:flex-row flex-col">
         <section className="text-blue space-y-4 w-full lg:w-1/2">
         <h1 className="text-3xl text-center lg:text-left lg:text-5xl font-bold mt-4">One More Friend</h1>
         <h2 className="text-1xl text-center lg:text-left font-semibold ">Thousands More Fun!</h2>
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
       {/* Divider */}
         <AdoptCardWeb/>
-        {/* <AdoptCardMobile/> */}
+        <AdoptCardMobile/>
       {/* Item List */}
       <section className="lg:block hidden lg:px-24 pt-8">
         <div className="flex justify-between items-end">
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </section>
       {/* Sellers */}
-      <section className="px-24 mt-8">
+      <section className="lg:block hidden px-24 mt-8">
       <div className="flex justify-between items-end">
         <h5 className="text-blue font-semibold">Proud to be part of <span className="text-lg font-bold">Pet Sellers</span></h5>
         <button className="rounded-full border-blue border px-4 py-2">View All Our Sellers</button>
@@ -101,13 +101,15 @@ export default function Home() {
         <h5 className="text-blue font-semibold">You already know?</h5>
         <h1 className="text-2xl text-blue font-bold">Useful pet knowledge</h1>
         </div>
-        <button className="rounded-full border-blue border px-4 py-2">View More</button>
+        <button className="lg:block hidden rounded-full border-blue border px-4 py-2">View More</button>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8"> 
           {
             blogs.map((item, id) => <React.Fragment key={id}><BlogCard id={id} item={item}/></React.Fragment>)
           }
         </div>
+        <button className="lg:hidden block mt-4 w-full rounded-full border-blue border px-4 py-2">View More</button>
+
       </section>
       {/* Footer */}
       <footer className="bg-[#FCEDD2] mt-12 px-4 lg:px-24 py-6 rounded-tr-lg rounded-tl-lg">
