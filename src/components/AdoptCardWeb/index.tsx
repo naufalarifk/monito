@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const AdoptCardWeb = () => {
   return (
-    <section className="lg:hidden flex mx-24 mt-8 z-10 relative rounded-lg bg-[#003459]">
+    <section className="hidden flex mx-24 mt-8 z-10 relative rounded-lg bg-[#003459]">
     <Image src='/section_1.webp' alt="" height={342} width={513} />
     <Image className="absolute bottom-0 -z-10" width={635} height={635} alt="" src='/shapes/rect_5.svg'/>
     <div className="w-1/2 text-blue">
@@ -15,7 +15,7 @@ const AdoptCardWeb = () => {
       <button className="rounded-full bg-blue text-white px-4 py-2"><p>Explore Now</p></button>
     </div>
     </div>
-  <Image className="absolute h-auto top-0 right-0 -z-10" width={635} height={635} alt="" src='/shapes/rect_6.svg'/>
+  <Image className="absolute h-full top-0 right-0 -z-10" width={635} height={635} alt="" src='/shapes/rect_6.svg'/>
   </section>
   )
 }
